@@ -1,0 +1,600 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "6a75ec68-7a30-46c3-b9e7-d978ab14f6aa",
+   "metadata": {},
+   "source": [
+    "## Python Basics"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8c234d2a-338d-4cbf-b132-c8a55e1c0692",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a93d5f84-55bb-4e58-a23d-ff312c589e70",
+   "metadata": {},
+   "source": [
+    "__1. Correct indentation and strings__\n",
+    "- Strings are used for storing and represnting text data."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "d9d7035a-c43e-456f-b5d5-0573bc7a9a95",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "This Kooc is an excellent course\n",
+      "Course name \n",
+      "is Practical Python\n",
+      "Those who don't take this Kooc would regret their decisions\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('This Kooc is an excellent course')\n",
+    "print(\"Course name \\nis Practical Python\")\n",
+    "print(\"Those who don't take this Kooc would regret their decisions\")"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f448e205-1691-45a0-93d6-17c4e74c1ef4",
+   "metadata": {},
+   "source": [
+    "__2. Integers, floats and decimals: using Python as a calculator__\n",
+    "- Variable names are identifiers, so they follow the rules of identifier.\n",
+    "- Variable store values such as strings, numbers, and other data types.\n",
+    "- Use a hash, #, to write memos in a line."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "dec4a545-b8e7-474b-9798-bdd0707dcef9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "40"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# addition: using a hash(#) sign, you can write memos.\n",
+    "23+ 17"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "9192a44a-4396-4929-be48-ba0cd94da3bd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0.6666666666666666"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "2/3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "id": "51095369-55b6-46e9-89b2-cb3468024a2e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "40 6 391 1.3529411764705883\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = 23; y = 17\n",
+    "print(x + y)\n",
+    "print(x + y, x - y, x * y, x/y)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8d149bc6-d81e-4ba5-bc6d-b36cb1f56a00",
+   "metadata": {},
+   "source": [
+    "__3. Data types and simple use of print function__"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "id": "697995ab-527e-4a6b-a046-8741901393d1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "y + z = 12.5\n",
+      "z - y =  2.5\n",
+      "y * z = 37.5\n",
+      "z / y = 1.5\n",
+      "y**2 = 25\n",
+      "z//y = 1.0\n",
+      "z%y = 2.5\n",
+      "<class 'int'>\n",
+      "<class 'float'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "#Addition\n",
+    "y = 5 # assign a value to the variable y.\n",
+    "z = 7.5\n",
+    "print(\"y + z =\" , y + z)\n",
+    "#Subtraction\n",
+    "print(\"z - y = \", z - y)\n",
+    "#Multiplication\n",
+    "print(\"y * z =\", y * z)\n",
+    "#Division\n",
+    "print(\"z / y =\", z/y)\n",
+    "#Exponent\n",
+    "print(\"y**2 =\", y**2)\n",
+    "#Floor division: return the hightest integer, not greater than the result\n",
+    "print('z//y =', z//y)\n",
+    "#Remainder\n",
+    "print('z%y =', z%y)\n",
+    "print(type(y))\n",
+    "print(type(z))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "d86b480c-d95e-4c85-8dfc-ef683a702a6b",
+   "metadata": {},
+   "source": [
+    "__4. String, Boolean, and triple quoted strings__"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "34789327-a66e-44da-8677-51a8c4661e95",
+   "metadata": {},
+   "source": [
+    "- Boolean expression\n",
+    "- \"\"\" are used to wirte multiple line strings \"\"\".\n",
+    "- Is also used for docstrings."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "id": "d2ed3268-064d-402f-bbe7-b06aec6a799f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "False\n",
+      "<class 'bool'> True\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(7 > 3)\n",
+    "print(3 > 7)\n",
+    "x = 7 > 3\n",
+    "print(type(x), x)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 12,
+   "id": "73eefc03-a4bb-4afb-911f-8e747f2af443",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Triple quoted strings are used to write multiple line strings.\\nThis is an example of a doc string. '"
+      ]
+     },
+     "execution_count": 12,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"\"\"Triple quoted strings are used to write multiple line strings.\n",
+    "This is an example of a doc string. \"\"\""
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "id": "5070a3bd-4b2a-4d09-92ad-236eeebfea8a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'\\na + b = c\\nd + e = g\\n'"
+      ]
+     },
+     "execution_count": 13,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"\"\"\n",
+    "a + b = c\n",
+    "d + e = g\n",
+    "\"\"\""
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "df1aa094-60b5-4777-93d6-d2c576929063",
+   "metadata": {},
+   "source": [
+    "__5. Taking input values__"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "6addc57b-bdbb-453d-8dca-c0192ff7afaf",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "What is your name? Yang A Young\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Yang A Young\n"
+     ]
+    }
+   ],
+   "source": [
+    "your_name = input('What is your name?')\n",
+    "print(your_name)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "e0c6541e-0af7-4796-80c8-b0b1cfc0590d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "How old are you? 22\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "22 <class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "your_age = input('How old are you?')\n",
+    "print(your_age, type(your_age))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "95f77cb5-2719-49c9-aad9-79680fe303ef",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "How old am I? 10\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2210\n"
+     ]
+    }
+   ],
+   "source": [
+    "my_age = input('How old am I?')\n",
+    "print(your_age + my_age)\n",
+    "#string concatenation"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b307ee83-2e9f-4c59-82cf-908fc0660232",
+   "metadata": {},
+   "source": [
+    "#Turning string value to integer\n",
+    "print(int(your_age) + int(my_age))\n",
+    "int(21.8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "id": "2e3849c7-7d3a-497a-bc30-dcadc3951cd6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "32.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(float(your_age) + float(my_age))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fe3d0a83-2f96-484c-9e2b-b28abb1f700b",
+   "metadata": {},
+   "source": [
+    "__6. If clause and comparison operators__"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "854f621c-3f35-49c8-8d77-6d6908b65fcd",
+   "metadata": {},
+   "source": [
+    "[Comparison operators]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "a82ed0a3-fd90-4b92-84e6-41a4a4c26b96",
+   "metadata": {},
+   "source": [
+    "- x > y : x is greater than y\n",
+    "- x < y : x is less than y\n",
+    "- x >= y : x is greater than or equal to y\n",
+    "- x <= y : x is less than or equal to y\n",
+    "- x == y : x is equal to y\n",
+    "- x != y : x is not equal to y\n",
+    "\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "87e25c77-9d8b-4632-8562-e731d75b29ab",
+   "metadata": {},
+   "source": [
+    "[If clause]"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e32671ca-8a55-4052-b874-143b64615cd1",
+   "metadata": {},
+   "source": [
+    "- if : performs an action if a condition is met (True) and no action if not.\n",
+    "- if...else : same as above and returns alternative action if not."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "caddbf32-4ce2-4ac1-9636-166a787c5a39",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter an integer 1\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "x has a value of 1\n"
+     ]
+    }
+   ],
+   "source": [
+    "x = int(input('Enter an integer'))  #Taking an integer\n",
+    "\n",
+    "if x == 1 :   #if-clause\n",
+    "    print('x has a value of 1')\n",
+    "else :\n",
+    "    print('x does not have a value of 1')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "d2912e5b-0926-49e0-8478-ff04a5ce25df",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Enter the first integer 2\n",
+      "Enter the second integer 2\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "The second integer is positive and its value is 2\n"
+     ]
+    }
+   ],
+   "source": [
+    "var1 = int(input('Enter the first integer'))\n",
+    "if var1 < 0 :\n",
+    "    print('The first integer is', var1, 'and its value is negative.')\n",
+    "    \n",
+    "var2 = int(input('Enter the second integer'))\n",
+    "if var2 < 0 :\n",
+    "    print(\"The second integer is negative\", \"and its value is\", var2)\n",
+    "else :\n",
+    "    print(\"The second integer is positive\", \"and its value is\", var2)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f6850dc4-1130-45f4-9d4d-c7464cf51e17",
+   "metadata": {},
+   "source": [
+    "__7. Dynamic value assignment and type changing__"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ade61558-eec6-49e3-8355-f87f6a3cb39f",
+   "metadata": {},
+   "source": [
+    "- What happens if you assign different values for the same variable?"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "32c7653e-7c01-4bb0-af62-35ba3c1b24fa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1 <class 'int'>\n",
+      "2.5 <class 'float'>\n",
+      "Arnoid <class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(x, type(x))\n",
+    "\n",
+    "x = 2.5\n",
+    "print(x, type(x))\n",
+    "\n",
+    "x = 'Arnoid'\n",
+    "print(x, type(x))\n",
+    "\n",
+    "#값만 아니라 타입도 불어와야하기 때문에 저장과 데이터처리 차원에서 비효율적이다.\n",
+    "#그러나 동적으로 데이터타입이 바뀌니까 유연함."
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fbd20feb-629b-4171-9a64-c07012f46b94",
+   "metadata": {},
+   "source": [
+    "__8. Multiple statements on single line__"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "993b5324-091a-4071-87be-0224c4720621",
+   "metadata": {},
+   "source": [
+    "- Separate two command lines with semicolon"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "815b8608-af35-4969-94ec-88038a00c4fc",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Hello!\n",
+      "This is KOOC content \n",
+      "for Python basics.\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"Hello!\"); print(\"This is KOOC content \\nfor Python basics.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "9c1aac53-ef5b-4a73-8109-87fe90bf3f55",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.12"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
